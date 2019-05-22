@@ -1,0 +1,32 @@
+1. 内容编辑器模块，一定要体验好，可以选择富文本编辑模式，还可以切换到markdown编辑模式
+
+1、富文本编辑模式符合所见即所得，markdown适合程序员；
+2、富文本编辑器有ckeditor, ueditor等可选，还可以使用draft.js来定制化编辑器
+3、编辑器还可以切换工具栏按钮UI， 可以直接是中文字块显示的按钮，直观方便，方便小白不适用
+    可以是图标模式，和word等文档编辑软件类似的界面，方便专门大众用户，也可以是英文界面，方便英文用户
+	
+	
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CKEditor 5 - Inline editor</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.1.0/inline/ckeditor.js"></script>
+</head>
+<body>
+    <h1>Inline editor</h1>
+    <div id="editor">
+        <p>This is some sample content.</p>
+    </div>
+    <script>
+        InlineEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+</body>
+</html>
